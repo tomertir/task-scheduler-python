@@ -1,4 +1,4 @@
-# Task Scheduler System 📋
+# Task Scheduler System 
 
 A priority-based task scheduling system written in Python, built as part of a Data Structures course at Ben-Gurion University.
 
@@ -9,21 +9,21 @@ This system manages tasks and workers efficiently using custom-implemented data 
 ## Features
 
 ### Task Management
-- 🔢 **Priority-based insertion** — tasks sorted by urgency, importance, and time window
-- 📝 **Task attributes:** ID, description, urgency, importance, time window (hours), required skills
-- 🔄 **Dynamic updates** — modify task properties while maintaining priority order
-- 📊 **Completion tracking** — completed tasks stored in a stack
+- **Priority-based insertion** — tasks sorted by urgency, importance, and time window
+- **Task attributes:** ID, description, urgency, importance, time window (hours), required skills
+- **Dynamic updates** — modify task properties while maintaining priority order
+- **Completion tracking** — completed tasks stored in a stack
 
 ### Worker Management
-- 👷 **Worker profiles** — ID, name, skills (with proficiency levels), availability, salary
-- 📅 **Availability tracking** — multiple time windows per worker
-- 💰 **Salary updates** — increment worker compensation
-- 📚 **Skill progression** — add skills and increase proficiency levels
+-  **Worker profiles** — ID, name, skills (with proficiency levels), availability, salary
+- **Availability tracking** — multiple time windows per worker
+- **Salary updates** — increment worker compensation
+- **Skill progression** — add skills and increase proficiency levels
 
 ### Task Allocation
-- 🎯 **Skill matching** — allocates tasks only to workers with required skills
-- ⏰ **Time validation** — ensures worker availability covers task time window
-- 🔁 **Re-queuing** — tasks without suitable workers return to the queue
+- **Skill matching** — allocates tasks only to workers with required skills
+- **Time validation** — ensures worker availability covers task time window
+- **Re-queuing** — tasks without suitable workers return to the queue
 
 ## Data Structures Implemented
 
@@ -118,18 +118,18 @@ worker1.update_salary(500)
 ## Validation & Error Handling
 
 ### Task Validation
-- ✅ Task ID must be integer
-- ✅ Description must be non-empty string
-- ✅ Urgency and importance must be positive integers
-- ✅ Time window: `(start, end)` where `0 ≤ start < end ≤ 23`
-- ✅ Skills: dictionary with string keys and positive integer values
+-  Task ID must be integer
+-  Description must be non-empty string
+-  Urgency and importance must be positive integers
+-  Time window: `(start, end)` where `0 ≤ start < end ≤ 23`
+-  Skills: dictionary with string keys and positive integer values
 
 ### Worker Validation
-- ✅ Worker ID must be integer
-- ✅ Name must be non-empty string
-- ✅ Skills: dictionary with string keys and positive integer values
-- ✅ Availability: list of tuples `(start, end)` where `0 ≤ start < end ≤ 23`
-- ✅ Salary must be positive integer
+- Worker ID must be integer
+- Name must be non-empty string
+- Skills: dictionary with string keys and positive integer values
+- Availability: list of tuples `(start, end)` where `0 ≤ start < end ≤ 23`
+- Salary must be positive integer
 
 ### Exceptions
 ```python
