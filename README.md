@@ -1,6 +1,6 @@
 # Task Scheduler System 
 
-A priority-based task scheduling system written in Python, built as part of a Data Structures course at Ben-Gurion University.
+A priority-based task scheduling system written in Python, built as part of a Introduction to Computer Science in Python course at Ben-Gurion University.
 
 ## Overview
 
@@ -172,4 +172,4 @@ raise RuntimeError("Queue is empty")
 
 ## Course
 
-Data Structures — Ben-Gurion University of the Negev
+Introduction to Computer Science in Python— Ben-Gurion University of the Negev
